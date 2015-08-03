@@ -26,9 +26,9 @@ vantage
   .listen(4000)
   .use(commands)
   .use(watch, {
-		files: ['./lib/vantage-commands.js']
-	})
-	.show();
+    files: ['./lib/vantage-commands.js']
+  })
+  .show();
 ```
 Now, whenever `./lib/vantage-commands.js` is changed, Vantage will import and update its existing commands and / or register new commands.
 
@@ -40,7 +40,6 @@ If the watched file is not a valid Vantage extension, `vantage-watch` will grace
  - It has syntax errors
  - It is not a valid file
 
- ###### License
+###### License
 
- MIT
-
+MIT
