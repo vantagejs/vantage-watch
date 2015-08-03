@@ -6,14 +6,14 @@ Listens for changes in Vantage.js extension files, and reloads the extensions wi
 
 Useful when developing new Vantage commands.
 
-##### Installation
+### Installation
 
 ```bash
 npm install vantage-watch
 npm install vantage
 ```
 
-##### Usage
+### Usage
 
 ```js
 const Vantage = require('vantage');
@@ -32,7 +32,7 @@ vantage
 ```
 Now, whenever `./lib/vantage-commands.js` is changed, Vantage will import and update its existing commands and / or register new commands.
 
-##### Error Handling
+### Error Handling
 
 If the watched file is not a valid Vantage extension, `vantage-watch` will gracefully catch the error and not attempt to load the module until it has been changed again, at which point it will retry. Examples of invalid imports include:
 
@@ -40,6 +40,6 @@ If the watched file is not a valid Vantage extension, `vantage-watch` will grace
  - It has syntax errors
  - It is not a valid file
 
-###### License
+### License
 
 MIT
