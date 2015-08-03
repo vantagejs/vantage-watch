@@ -1,0 +1,1 @@
+module.exports = function(vantage) { vantage.command("foo", "").action(function(args, cb){ this.log("foo2"); cb(0.5946912567596883); }) };
